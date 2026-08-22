@@ -90,7 +90,7 @@ $bodyClass = isset($bodyClass) ? $bodyClass : '';
 </header>
 
 <div class="mobile-drawer" aria-hidden="true">
-  <a class="logo" href="<?= e(url('/')) ?>" style="margin-bottom:1rem;">
+  <a class="logo" href="<?= e(url('/')) ?>">
     <img src="<?= e(logo_src()) ?>" alt="Vertex800 AI Digital Agency">
   </a>
   <a href="<?= e(url('/about.php')) ?>">About</a>
@@ -115,9 +115,9 @@ $bodyClass = isset($bodyClass) ? $bodyClass : '';
   <a href="<?= e(url('/insights.php')) ?>">Insights</a>
   <a href="<?= e(url('/careers.php')) ?>">Careers</a>
   <a href="<?= e(url('/contact.php')) ?>">Contact</a>
-  <p style="margin-top:1.5rem;">
+  <div class="drawer-cta">
     <a class="btn btn-primary gradient-bg" href="<?= e(url('/contact.php')) ?>">Start Your Project →</a>
-  </p>
+  </div>
 </div>
 
 <main>
