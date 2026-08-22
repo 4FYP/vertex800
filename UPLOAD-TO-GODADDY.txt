@@ -1,0 +1,40 @@
+# Vertex800 – GoDaddy upload package (HTML / CSS / PHP)
+
+This folder is a **plain PHP website**. No Node.js. No `npm build`.
+
+## Upload to GoDaddy
+
+1. Open File Manager → `public_html/Revamped_Site`
+2. Delete the old files inside that folder
+3. Upload **everything inside** this `godaddy-site` folder
+4. Confirm you have:
+   - `index.php`
+   - `assets/css/styles.css`
+   - `includes/config.php`
+5. Visit: https://vertex800.com/Revamped_Site/
+
+## Path config
+
+`includes/config.php` **auto-detects** the folder name.
+You do not need to edit BASE_PATH for `/godaddy-site/` or `/Revamped_Site/`.
+
+## Local preview
+
+With XAMPP / WAMP / local Apache:
+
+1. Put (or keep) the folder at `htdocs/godaddy-site`
+2. Open: http://localhost/godaddy-site/
+
+Or with PHP built-in server (from inside this folder):
+
+```bash
+cd godaddy-site
+php -S localhost:8080
+```
+
+Open http://localhost:8080/
+
+## Contact form
+
+`contact.php` uses PHP `mail()` to send to `info@vertex800.com`.
+This only works on the live GoDaddy server (not always on localhost).
