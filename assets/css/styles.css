@@ -75,38 +75,38 @@ button, input, select, textarea { font: inherit; }
 }
 .logo img {
   height: auto;
-  max-height: clamp(28px, 7.5vw, 34px);
+  max-height: clamp(56px, 15vw, 68px);
   width: auto;
-  max-width: min(140px, 50vw);
+  max-width: min(280px, 58vw);
   object-fit: contain;
   display: block;
 }
 @media (min-width: 380px) {
   .logo img {
-    max-height: clamp(30px, 7vw, 38px);
-    max-width: min(160px, 52vw);
+    max-height: clamp(60px, 14vw, 76px);
+    max-width: min(320px, 58vw);
   }
 }
 @media (min-width: 480px) {
   .logo img {
-    max-height: 42px;
-    max-width: min(200px, 48vw);
+    max-height: 84px;
+    max-width: min(400px, 52vw);
   }
 }
 @media (min-width: 768px) {
   .logo img {
-    max-height: 46px;
-    max-width: 220px;
+    max-height: 92px;
+    max-width: 440px;
   }
 }
 @media (min-width: 1100px) {
   .logo {
-    flex-shrink: 0;
-    max-width: none;
+    flex-shrink: 1;
+    max-width: min(520px, 32vw);
   }
   .logo img {
-    max-height: 54px;
-    max-width: 260px;
+    max-height: 108px;
+    max-width: 100%;
   }
 }
 .nav-links {
@@ -206,7 +206,7 @@ button, input, select, textarea { font: inherit; }
   inset: 0;
   background: var(--navy);
   z-index: 90;
-  padding: 5.5rem 1.25rem 2rem;
+  padding: 7.5rem 1.25rem 2rem;
   overflow-y: auto;
 }
 .mobile-drawer.open { display: block; }
@@ -218,7 +218,7 @@ button, input, select, textarea { font: inherit; }
   font-weight: inherit;
 }
 .mobile-drawer .logo img {
-  max-height: clamp(36px, 10vw, 52px);
+  max-height: clamp(72px, 20vw, 104px);
   max-width: 100%;
   width: auto;
   height: auto;
@@ -352,11 +352,11 @@ button, input, select, textarea { font: inherit; }
   color: #fff;
   display: flex;
   align-items: flex-end;
-  padding: 7rem 0 4rem;
+  padding: 9.5rem 0 4rem;
   overflow: hidden;
 }
 @media (min-width: 480px) {
-  .hero { padding: 8rem 0 5rem; }
+  .hero { padding: 11rem 0 5rem; }
 }
 @media (min-width: 900px) {
   .hero { align-items: center; padding-bottom: 4rem; }
@@ -486,10 +486,11 @@ button, input, select, textarea { font: inherit; }
 .hero-labels {
   display: flex;
   flex-wrap: wrap;
-  gap: .75rem 1rem;
+  gap: .65rem 1.15rem;
   margin-top: .75rem;
   font-size: .75rem;
   color: rgba(255,255,255,.4);
+  max-width: 72rem;
 }
 .hero-labels button {
   background: none;
@@ -504,7 +505,7 @@ button, input, select, textarea { font: inherit; }
 .page-hero {
   background: var(--navy);
   color: #fff;
-  padding: 8rem 0 4rem;
+  padding: 10rem 0 4rem;
   position: relative;
   overflow: hidden;
 }

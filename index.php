@@ -10,12 +10,13 @@ $techStack = $d['techStack'];
 $industries = $d['industries'];
 $stats = $d['stats'];
 $company = $d['company'];
-$heroPhotos = array('AI.png', 'IT.jpg', 'D.jpg', 'Business_Intelligence.png', 'MSP Services.png');
 ?>
 
 <section class="hero">
-  <?php foreach ($hero as $i => $slide): ?>
-    <div class="hero-photo <?= $i === 0 ? 'active' : '' ?>" data-hero-photo style="background-image:url('<?= e(img($heroPhotos[$i % count($heroPhotos)])) ?>')"></div>
+  <?php foreach ($hero as $i => $slide):
+    $photo = !empty($slide['image']) ? $slide['image'] : 'AI.png';
+  ?>
+    <div class="hero-photo <?= $i === 0 ? 'active' : '' ?>" data-hero-photo style="background-image:url('<?= e(img($photo)) ?>')"></div>
   <?php endforeach; ?>
   <div class="hero-bg"></div>
   <div class="hero-grid"></div>
@@ -23,7 +24,7 @@ $heroPhotos = array('AI.png', 'IT.jpg', 'D.jpg', 'Business_Intelligence.png', 'M
     <div hidden data-slide
       data-title="<?= e($slide['title']) ?>"
       data-desc="<?= e($slide['description']) ?>"
-      data-href="<?= e(url('/service.php?slug=' . basename(rtrim($slide['href'], '/')))) ?>">
+      data-href="<?= e(hero_href($slide['href'])) ?>">
     </div>
   <?php endforeach; ?>
   <div class="hero-inner">
@@ -32,7 +33,7 @@ $heroPhotos = array('AI.png', 'IT.jpg', 'D.jpg', 'Business_Intelligence.png', 'M
     <p class="hero-desc" data-hero-desc><?= e($hero[0]['description']) ?></p>
     <div class="hero-actions">
       <a class="btn btn-primary gradient-bg" href="<?= e(url('/contact.php')) ?>">Start Your Project →</a>
-      <a class="link" data-hero-link href="<?= e(url('/service.php?slug=' . basename(rtrim($hero[0]['href'], '/')))) ?>">Explore <?= e($hero[0]['title']) ?></a>
+      <a class="link" data-hero-link href="<?= e(hero_href($hero[0]['href'])) ?>">Explore <?= e($hero[0]['title']) ?></a>
     </div>
     <div class="hero-dots" role="tablist">
       <?php foreach ($hero as $i => $slide): ?>

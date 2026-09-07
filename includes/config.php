@@ -17,14 +17,36 @@ function url($path = '') {
   return $path;
 }
 
+function hero_href($href) {
+  $href = (string) $href;
+  if (strpos($href, '/services/') === 0) {
+    return url('/service.php?slug=' . basename(rtrim($href, '/')));
+  }
+  return url($href);
+}
+
+function asset_version($relativePath) {
+  $full = __DIR__ . '/../' . ltrim((string) $relativePath, '/');
+  if (function_exists('file_exists') && file_exists($full)) {
+    return (string) filemtime($full);
+  }
+  return '1';
+}
+
 function asset($path) {
-  return 'assets/' . ltrim((string) $path, '/');
+  $path = ltrim((string) $path, '/');
+  $rel = 'assets/' . $path;
+  $v = asset_version($rel);
+  return $rel . '?v=' . $v;
 }
 
 function img($file) {
   $file = ltrim(str_replace('\\', '/', (string) $file), '/');
   $parts = explode('/', $file);
-  return 'images/' . implode('/', array_map('rawurlencode', $parts));
+  $encoded = implode('/', array_map('rawurlencode', $parts));
+  $rel = 'images/' . $encoded;
+  $v = asset_version('images/' . $file);
+  return $rel . '?v=' . $v;
 }
 
 function logo_src() {

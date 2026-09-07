@@ -512,6 +512,7 @@
       "title": "AI & Engineering",
       "description": "Engineering-led design and AI/data-driven platform transformation at enterprise scale.",
       "href": "/services/ai-engineering",
+      "image": "AI.png",
       "gradient": "from-[#06101f] via-[#0a2a4a] to-[#0d3d3a]"
     },
     {
@@ -519,20 +520,15 @@
       "title": "Cyber",
       "description": "Defense, resilience, digital trust, and cyber AI for a hostile threat landscape.",
       "href": "/services/cyber",
+      "image": "IT.jpg",
       "gradient": "from-[#06101f] via-[#0c1f4a] to-[#1a3a6e]"
-    },
-    {
-      "id": "customer",
-      "title": "Customer",
-      "description": "Strategy, design, marketing & commerce, sales and service - via Vertex Digital.",
-      "href": "/services/customer",
-      "gradient": "from-[#06101f] via-[#0a2540] to-[#0e4a5c]"
     },
     {
       "id": "strategy",
       "title": "Strategy & Transactions",
       "description": "Strategy, M&A, performance improvement, valuation, and sustainability moves.",
       "href": "/services/strategy-transactions",
+      "image": "Business_Intelligence.png",
       "gradient": "from-[#06101f] via-[#122040] to-[#1a3558]"
     },
     {
@@ -540,7 +536,64 @@
       "title": "Operate",
       "description": "Managed services for IT, cyber, and business functions with BOT/BOTT models.",
       "href": "/services/operate",
+      "image": "MSP Services.png",
       "gradient": "from-[#06101f] via-[#0f2a3a] to-[#164850]"
+    },
+    {
+      "id": "about",
+      "title": "About",
+      "description": "A digital innovation partner for ambitious enterprises - intelligent talent and cutting-edge software.",
+      "href": "/about.php",
+      "image": "Staff.png",
+      "gradient": "from-[#06101f] via-[#0a2540] to-[#0e4a5c]"
+    },
+    {
+      "id": "services",
+      "title": "Services",
+      "description": "Vast services, rich experience, real results - from AI platforms to tax, cyber, and operate.",
+      "href": "/services.php",
+      "image": "IT.jpg",
+      "gradient": "from-[#06101f] via-[#0c1f4a] to-[#1a3a6e]"
+    },
+    {
+      "id": "industries",
+      "title": "Industries",
+      "description": "Domain expertise across the sectors that shape tomorrow - technology fluency with industry context.",
+      "href": "/industries.php",
+      "image": "Cloud.jpg",
+      "gradient": "from-[#06101f] via-[#122040] to-[#1a3558]"
+    },
+    {
+      "id": "alliances",
+      "title": "Alliances",
+      "description": "Technology alliances that accelerate outcomes with certified depth and faster delivery.",
+      "href": "/alliances.php",
+      "image": "Cloud1.jpg",
+      "gradient": "from-[#06101f] via-[#0f2a3a] to-[#164850]"
+    },
+    {
+      "id": "insights",
+      "title": "Insights",
+      "description": "Perspectives on technology, talent, and transformation from Vertex800 practitioners.",
+      "href": "/insights.php",
+      "image": "Business_Intelligence.png",
+      "gradient": "from-[#06101f] via-[#0a2a4a] to-[#0d3d3a]"
+    },
+    {
+      "id": "careers",
+      "title": "Careers",
+      "description": "Join a global talent network of the top 5% building intelligent software that lasts.",
+      "href": "/careers.php",
+      "image": "Staff.png",
+      "gradient": "from-[#06101f] via-[#0c1f4a] to-[#1a3a6e]"
+    },
+    {
+      "id": "contact",
+      "title": "Contact",
+      "description": "Start a conversation about your next platform, product, or transformation program.",
+      "href": "/contact.php",
+      "image": "D.jpg",
+      "gradient": "from-[#06101f] via-[#0a2540] to-[#0e4a5c]"
     }
   ],
   "offerings": [
