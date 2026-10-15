@@ -543,7 +543,7 @@
       "id": "about",
       "title": "About",
       "description": "A digital innovation partner for ambitious enterprises - intelligent talent and cutting-edge software.",
-      "href": "/about.php",
+      "href": "/about",
       "image": "Staff.png",
       "gradient": "from-[#06101f] via-[#0a2540] to-[#0e4a5c]"
     },
@@ -551,7 +551,7 @@
       "id": "services",
       "title": "Services",
       "description": "Vast services, rich experience, real results - from AI platforms to tax, cyber, and operate.",
-      "href": "/services.php",
+      "href": "/services",
       "image": "IT.jpg",
       "gradient": "from-[#06101f] via-[#0c1f4a] to-[#1a3a6e]"
     },
@@ -559,7 +559,7 @@
       "id": "industries",
       "title": "Industries",
       "description": "Domain expertise across the sectors that shape tomorrow - technology fluency with industry context.",
-      "href": "/industries.php",
+      "href": "/industries",
       "image": "Cloud.jpg",
       "gradient": "from-[#06101f] via-[#122040] to-[#1a3558]"
     },
@@ -567,7 +567,7 @@
       "id": "alliances",
       "title": "Alliances",
       "description": "Technology alliances that accelerate outcomes with certified depth and faster delivery.",
-      "href": "/alliances.php",
+      "href": "/alliances",
       "image": "Cloud1.jpg",
       "gradient": "from-[#06101f] via-[#0f2a3a] to-[#164850]"
     },
@@ -575,7 +575,7 @@
       "id": "insights",
       "title": "Insights",
       "description": "Perspectives on technology, talent, and transformation from Vertex800 practitioners.",
-      "href": "/insights.php",
+      "href": "/insights",
       "image": "Business_Intelligence.png",
       "gradient": "from-[#06101f] via-[#0a2a4a] to-[#0d3d3a]"
     },
@@ -583,7 +583,7 @@
       "id": "careers",
       "title": "Careers",
       "description": "Join a global talent network of the top 5% building intelligent software that lasts.",
-      "href": "/careers.php",
+      "href": "/careers",
       "image": "Staff.png",
       "gradient": "from-[#06101f] via-[#0c1f4a] to-[#1a3a6e]"
     },
@@ -591,7 +591,7 @@
       "id": "contact",
       "title": "Contact",
       "description": "Start a conversation about your next platform, product, or transformation program.",
-      "href": "/contact.php",
+      "href": "/contact",
       "image": "D.jpg",
       "gradient": "from-[#06101f] via-[#0a2540] to-[#0e4a5c]"
     }
